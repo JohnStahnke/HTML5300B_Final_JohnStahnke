@@ -11,12 +11,18 @@
 var bio = {
 	"name" : "John Stahnke",
 	"role" : "Software Engineer",
-	"skills" : ["Integrity", "Hard working", "Team Player", "Programming", "Troubleshooting"]}
+	"skills" : ["Integrity", "Hard working", "Team Player", "Programming", "Troubleshooting"],
+	"picture" : "./images/BobbyAnd_I.jpg"
+	}
+
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 
+
 $("#header").prepend(HTMLheaderRole.replace("%data%", formattedRole));
 $("#header").prepend(HTMLheaderName.replace("%data%", formattedName));
+$("#header").prepend(HTMLbioPic.replace("%data%", bio.picture));
+
 if(bio.skills.length > 0){
 	$("#header").append(HTMLskillsStart);
 	

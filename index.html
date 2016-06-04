@@ -6,15 +6,14 @@
   <title>Resume</title>
 
   <!-- Load the page styles. -->
-  <link href="css/style.css" rel="stylesheet">
-
   <script src="js/jQuery.js"></script>
 
   <script src="js/helper.js"></script>
-
-
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
-
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+  <link href="css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width">
 </head>
 <body>
@@ -23,6 +22,26 @@
       <ul id="topContacts" class="flex-box"></ul>
     </div>
     <div style="clear: both;"></div>
+	
+	<!--Collapse these divs-->
+	<div class="panel-group" id="accordion">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" data-target="#collapseWork">
+					Work Experience
+					</a>
+				</h4>
+			</div> <!--end of div class panel-heading-->
+			<div id="collapseWork" class="panel-collapse collapse in">
+					<div id="workExperience" class="panel-body">
+					</div>
+			</div> <!--end of div id collapseOne-->
+		</div> <!--end of div class="panel"-->
+		
+	</div> <!--end of div class="panel-group"-->
+	
+	
     <div id="workExperience" class="gray">
       <h2>Work Experience</h2>
     </div>
@@ -37,6 +56,8 @@
         <ul id="footerContacts" class="flex-box">
       </ul>
     </div>
+	<!--End of Collapse-->
+	
   </div>
 
 
