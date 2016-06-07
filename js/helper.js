@@ -1,6 +1,6 @@
 
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<span>%data%</span><hr>';
+var HTMLheaderRole = '<h2><span>%data%</span></h2>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';
@@ -99,9 +99,9 @@ function initializeMap() {
     locations.push(bio.contacts.location);
 
 
-    education.schools.forEach(function(school){
+ /*   education.schools.forEach(function(school){
       locations.push(school.location);
-    });
+    });*/
 
     work.jobs.forEach(function(job){
       locations.push(job.location);

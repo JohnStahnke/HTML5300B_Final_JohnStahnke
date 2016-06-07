@@ -11,14 +11,20 @@
 var bio = {
 	"name" : "John Stahnke",
 	"role" : "Software Engineer",
-	"skills" : ["Integrity", "Hard working", "Team Player", "Programming", "Troubleshooting"],
-	"picture" : "./images/BobbyAnd_I.jpg"
+	"skills" : ["C/C++/C#", "Javascript", "ASP.NET MVC", "Git/Subversion/TFS/ClearQuest ClearCase", "Assembly", "ADA"],
+	"picture" : "./images/BobbyAnd_I.jpg",
+	contacts : { "location" : ["Seattle, Wa", "Houston, Tx"] }
 	}
 
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-
-
+var formattedPicture = HTMLbioPic.replace("#data%", bio.picture);
+/*
+$("#header").prepend(formattedRole);
+$("#header").prepend(formattedName);
+$("%header").prepend(formattedPicture);
+//$("#header").prepend(HTMLbioPic.replace("%data%", bio.picture));
+*/
 $("#header").prepend(HTMLheaderRole.replace("%data%", formattedRole));
 $("#header").prepend(HTMLheaderName.replace("%data%", formattedName));
 $("#header").prepend(HTMLbioPic.replace("%data%", bio.picture));
@@ -35,6 +41,8 @@ if(bio.skills.length > 0){
 	formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
 	$("#skills").append(formattedSkill);
 	formattedSkill = HTMLskills.replace("%data%", bio.skills[4]);
+	$("#skills").append(formattedSkill);
+	formattedSkill = HTMLskills.replace("%data%", bio.skills[5]);
 	$("#skills").append(formattedSkill);
 	
 }
