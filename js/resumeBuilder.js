@@ -49,9 +49,18 @@ if(bio.skills.length > 0){
 
 var work = {
 	"jobs": [{
+		"employer": "L3 Link Simulation and Training",
+		"title": "Software Engineer",
+		"dates": "01/2017-Present",
+		"location": "Creech AFB, Nv",
+		"description": ["Software development languages C++, Ada on Linux platform.",
+		"Merge, Build and Deployment engineer using Atlassian suite of tools (JIRA, Crucible, and Bamboo).",
+		"Responsible for configuration management of release documentation and releasing product to all Air Force sites that train General Atomics MQ1 and MQ9 Drones."
+		]
+	},{
 		"employer": "Boeing EO&T",
 		"title": "Software Engineer",
-		"dates": "2010-present",
+		"dates": "2010-2016",
 		"location": "Seattle, Wa",
 		"description": ["Software analysis and development of applications in C sharp and Web Applications using Asp.net MVC Visual Studio.Net 3.0 and 4.0 using 2010 2012.",
 			"Legacy application support using PLSql and setting up and using Oracle Web Tier Http Application Server.",
