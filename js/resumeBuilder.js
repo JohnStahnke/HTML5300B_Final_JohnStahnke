@@ -12,7 +12,7 @@ var bio = {
 	"name" : "John Stahnke",
 	"role" : "Software Engineer",
 	"skills" : ["C/C++/C#", "Javascript", "ASP.NET MVC", "Git/Subversion/TFS/ClearQuest ClearCase", "Assembly", "ADA"],
-	"picture" : "./images/BobbyAnd_I.jpg",
+	"picture" : "./images/PhilAndI.jpg",
 	contacts : { "location" : ["Seattle, Wa", "Houston, Tx"] }
 	}
 
